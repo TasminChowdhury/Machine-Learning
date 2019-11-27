@@ -1,2 +1,2 @@
-# Machine-Learning
-Here is the codes I practiced machine learning exercises
+# Machine Learning
+Here are the Materials I learned on Machine-Learning Course during my Masters at UNLV
