@@ -22,7 +22,6 @@ vector < vector<double> > train_data;
 vector <int> train_labels;
 vector < vector<double> > test_data;
 vector <int> test_labels;
-
 #include "trained_weights.h"
 
 void allocate(){
@@ -165,7 +164,7 @@ void test() {
     cout << "\ntest on train data\n";
     float temp;
     float accuracy=0;
-    for (int i = 0; i < 100; i++)
+    for (int i = 0; i < number_of_training_data; i++)
     {
         // FORWARD PROPAGATION
 
@@ -208,13 +207,13 @@ void test() {
         fill(s1_test.begin(), s1_test.end(), 0);
         fill(y1_test.begin(), y1_test.end(), 0);
     }
-    accuracy = ((accuracy*1.0)/100)*100;
+    accuracy = ((accuracy*1.0)/number_of_training_data)*100;
     cout << "accuracy=" << accuracy << "%" << endl;
 
 
     cout << "\ntesting....\n";
     accuracy=0;
-    for (int i = 0; i < 100; i++)
+    for (int i = 0; i < number_of_test_data; i++)
     {
         for (int j=0; j<neurons_hidden_layer; j++) {
             for (int k=0; k<data_dimension; k++) {
@@ -255,7 +254,7 @@ void test() {
         fill(y1_test.begin(), y1_test.end(), 0);
 
     }
-    accuracy = ((accuracy*1.0)/100)*100;
+    accuracy = ((accuracy*1.0)/number_of_test_data)*100;
     cout << "accuracy=" << accuracy << "%" << endl;
 
 
