@@ -1,5 +1,0 @@
--	run train to train and test on train and test data set; the trained weights saved in trained_weights.h
--	run test to test on train and test data set with the weights saved in trained_weights.h file
--	run test_one to test on specific test or train image with the weights saved in trained_weights.h file
--	radar_chart: radaar chart of sum of squared error for sample data set
--	SSE.png:	sum of squared error under training
