@@ -150,7 +150,7 @@ int main()
 
 
 
-	// Only two epochs are needed to finish the training
+	// Only ten epochs are needed to finish the training
 
 	for (j = 0; j < 10; j++)
 
